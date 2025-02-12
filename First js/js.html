@@ -6,19 +6,57 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" onmouseenter="document.bgColor='DFF0D8'" value="Home"><br>
-    <script>
-        let studentName="Laboni";
-        let price=20.50;
-        let quantity=4;
-        let result=price*quantity;
-        document.write("Result"+"<br>");
-        document.write(studentName+" You Have To Pay "+result+" Taka "+"$<br>");
-        let fishPrice=100;
-        let fishQuantity=2;
-        let fishResult=price*quantity;
-        document.write(" Fish price is "+result+" taka ");
 
+    <!-- <h1 style="text-align: center;">gopali kotha kom bole mon diye coding koren</h1> -->
+    <label for="">Number1</label>
+    <input type="text" id="number1"><br> <p></p>
+    <label for="">Number2</label>
+    <input type="text" id="number2"><br><p></p>
+    <input type="button" value="+" onclick="sum()" style="background-color:;"> <br><p></p>
+    <input type="button" value="-" onclick="sub()" style="border: 2px solid ;"><br><p></p>
+    <input type="button" value="*" onclick="mult()" style="background-color: ;"><br><p></p>
+    <input type="button" value="%" onclick="mod()" style="background-color:;"><br><p></p>
+    <input type="button" value="/" onclick="div()"><br><p></p>
+    <br>
+
+    <input type="text" name="" id="result">
+
+    <script>
+        function sum(){
+            let number1= parseFloat(document.getElementById("number1").value);
+            let number2= parseFloat(document.getElementById("number2").value);
+            let sum= number1 + number2;
+            document.getElementById("result").value=sum;
+
+        }
+        function sub(){
+            let number1= parseFloat(document.getElementById("number1").value);
+            let number2= parseFloat(document.getElementById("number2").value);
+            let sum= number1 - number2;
+            document.getElementById("result").value=sum;
+
+        }
+        function mult(){
+            let number1= parseFloat(document.getElementById("number1").value);
+            let number2= parseFloat(document.getElementById("number2").value);
+            let sum= number1 * number2;
+            document.getElementById("result").value=sum;
+
+        }
+        function mod(){
+            let number1= parseFloat(document.getElementById("number1").value);
+            let number2= parseFloat(document.getElementById("number2").value);
+            let sum= number1 % number2;
+            document.getElementById("result").value=sum;
+
+        }
+        function div(){
+            let number1= parseFloat(document.getElementById("number1").value);
+            let number2= parseFloat(document.getElementById("number2").value);
+            let sum= number1 / number2;
+            document.getElementById("result").value=sum;
+
+        }
     </script>
 </body>
 </html>

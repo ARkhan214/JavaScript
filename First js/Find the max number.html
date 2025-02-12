@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Number</title>
+</head>
+
+<body>
+    <label for="">First Number</label><br>
+    <input type="text" id="numm1"><br>
+    <label for="">Second Number</label><br>
+    <input type="text" id="numm2"><br>
+    <input type="button" value="Find the max" onclick="maxm()"><br>
+
+    <span for="" id="result"></span>
+
+    <script>
+        function maxm() {
+            let nu1 = parseInt(document.getElementById('numm1').value);
+            let nu2 = parseInt(document.getElementById('numm2').value);
+
+            if (nu1>=nu2) {
+                document.getElementById('result').innerHTML=nu1+' is big';
+                
+            }
+            else {
+                document.getElementById('result').innerHTML=nu2+' is big';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
