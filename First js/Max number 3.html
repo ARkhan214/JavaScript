@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Number 1</label><br>
+    <input type="text" name="" id="number1"><br>
+    <label for="">Number 1</label><br>
+    <input type="text" name="" id="number2"><br>
+    <label for="">Number 1</label><br>
+    <input type="text" name="" id="number3"><br>
+
+    <input type="button" value="Find the Max Number" onclick="findthemax()"><br>
+
+    <span id="result"></span>
+
+    <script>
+        function findthemax() {
+            let nmb1 = document.getElementById('number1').value;
+            let nmb2 = document.getElementById('number2').value;
+            let nmb3 = document.getElementById('number3').value;
+
+
+            if (nmb1>= nmb2 && nmb1 >= nmb3) {
+                document.getElementById('result').innerHTML= nmb1 + ' Is Max Number.';
+            }
+            else if (nmb2 >= nmb1 && nmb2 >= nmb3) {
+                    document.getElementById('result').innerHTML= nmb2 + ' Is Max Number.';
+                }
+            else {
+                document.getElementById('result').innerHTML= nmb3 + ' Is Max Number.';
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
