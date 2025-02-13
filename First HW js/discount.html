@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input=parseFloat(prompt('Enter your Amaount'));
+
+        if(input<100){
+            document.write(input);
+
+        }
+
+        else if(input<=300){
+            document.write(input-(input*.10));
+        }
+        else if(input<=700){
+            document.write(input-(input*.15));
+        }
+        else if(input<=1000){
+            document.write(input-(input*.20));
+        
+        }
+        else {
+            document.write(input-(input*.25));
+        }
+       
+    </script>
+</body>
+</html>
