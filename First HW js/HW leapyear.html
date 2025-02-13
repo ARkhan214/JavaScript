@@ -9,15 +9,23 @@
 
 <body>
     <script>
-        let leapyearchake = parseInt(prompt('enter number'));
-
-        if (leapyearchake%4==0) {
-
+        let input = prompt('Give me a number,i can give you a leap year number');
+        if (input % 4 == 0) {
+            if (input % 100 == 0) {
+                if (input % 400 == 0) {
+                    document.write(input + ' is Leap Year');
+                }
+                else {
+                    document.write(input + ' is not Leap Year');
+                }
+            }
+            else {
+                document.write(input + ' is Leap Year');
+            }
         }
         else {
-
+            document.write(input + ' is Not Leap Year');
         }
-
     </script>
 
 
