@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let age=prompt('Please enter your age to chake your voting eligibility');
+
+
+        // if(age>=18 && age<150){
+        //     document.write("Your are a voter.You can vote.");
+        // }
+
+        // else{
+        //     document.write("You are not eligible for vote.");
+        // }
+
+
+
+
+
+        // let userInput = prompt('Enter Age ');
+        // let age = parseInt(userInput);
+
+        // if (Number.isNaN(age)) {
+
+        //     document.write('The age is not valid');
+        // }
+        // else {
+
+        //     document.write('done');
+        // }
+
+
+
+        let age = parseInt(prompt('Enter Age '));
+
+        if (Number.isNaN(age)) {
+
+            document.write(age+' This is not a Age Number.Please Enter a Number');
+        }
+
+        else if (age >=18 && age<121) {
+            document.write("Your are a voter.You can vote.");
+
+        }
+        else if(age>120){
+            document.write("Congratulations!!!! You are most lucky voter in this Country.Take Love Form Me and Give Your Valuable Vote Sir.");
+        }
+        else {
+
+            document.write("You are not eligible for vote.");
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
