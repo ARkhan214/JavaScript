@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = 20;
+        let y = 30;
+        let z = 40;
+        document.write(x + " ");
+        document.write(y + " ");
+        document.write(z + " <br>");
+
+        // x = 20 y = 30 z = 40
+        // x = 30 y = 40 z = 20
+
+        let tempt = x;
+        let tempt1 = y;
+        
+        x = tempt1;
+        y = z;
+        z = tempt;
+
+        document.write(x + " ");
+        document.write(y + " ");
+        document.write(z + " <br>");
+
+
+        // let x = 20;
+        // let y = 30;
+
+        // document.write(x+" ");
+        // document.write(y+" <br>");
+
+        // let tempt=x;
+        // x=y;
+        // y=tempt;
+        // document.write(x+" ");
+        // document.write(y+" ");
+
+    </script>
+</body>
+
+</html>
