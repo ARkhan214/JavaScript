@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let names=['semanto','Atiq','Imran','Masud','Istiaq','Arif',];
+    let passwords=['123','456','789','987','654','321'];
+
+    let userName =prompt('User Name').toLowerCase();
+    let found = true;
+
+    for (let i = 0; i< names.length; i++){
+
+        if (userName==names[i].toLowerCase()){
+            let index = i;
+            let password=prompt('Enter your password');
+
+            if(password==passwords[index]){
+                document.write('Welcome '+userName);
+            }
+            else{
+                document.write('Password is incorrect');
+            }
+            break;
+        }
+        if (i==names.length-1){
+            document.write('User is incorrect');
+        }
+    }
+   </script> 
+</body>
+</html>
