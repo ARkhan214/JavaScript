@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let myArray=[50,38,49,33,]
-            for(let i=0; i<myArray.lenth-1; i++){
-                for(let j=0 ; j<myArray.length-1-i){
+        let n = [20, 25, 15, 9, 50, 40, 60, 708, 39, 2, 0, 3, 20, 53, 40, 57, 30, 5, 7, 97, 0, 75, 46, 5435, 435, 46, 5, 87];
 
-                }
-                if(myArray>myArray){
 
+        for (i = 0; i < n.length - 1; i++) {
+
+            for (j = 0; j < n.length - 1 - i; j++) {
+                if (n[j] > n[j + 1]) {
+                    let temp = n[j];
+                    n[j] = n[j + 1];
+                    n[j + 1] = temp;
                 }
             }
-        
+        }
+        document.write(n);
+
+
+        // let n=[20,25,15,9,50,40,60,708,39,2,0,3,20,53,40,57,30,5,7,97,0,75,46,5435,435,46,5,87];
+        // for(i=0; i<n.length-1 ;i++){
+
+        //     for(j=0; j<n.length-1-i; j++){
+        //         if(n[j]>n[j+1]){
+        //             let temp = n[j];
+        //             n[j]=n[j+1];
+        //             n[j+1]=temp;
+        //         }
+        //     }
+        // }
+        // document.write(n);
     </script>
 </body>
+
 </html>
