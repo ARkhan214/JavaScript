@@ -13,6 +13,8 @@
         <input type="text" id="name1"><br>
         <label for="">ID</label><br>
         <input type="text" id="id1"><br>
+        <label for="">Password</label><br>
+        <input type="password" id="pass1"><br>
         <label for="">Email</label><br>
         <input type="email" id="email1"><br>
         <input type="button" value="Submit" onclick="formSubmit()">
@@ -23,15 +25,16 @@
             let userName = document.getElementById('name1').value;
             let userName1 = document.getElementById('id1').value;
             let userName2 = document.getElementById('email1').value;
+            let userName3 = document.getElementById('pass1').value;
             
 
-            let output = 'Name: ' +userName+'<br>'+'ID: '+ userName1+'<br>'+'E-mail: '+userName2;
+            let output = 'Name: ' +userName+'<br>'+'ID: '+ userName1+'<br>'+'E-mail: '+userName2+'<br>'+'Password: '+userName3;
                 let newWindow = window.open("",'_blank');
                 newWindow.document.write(output);
 
                
 
-               console.log(userName + ' ' + userName1 + ' ' + userName2);
+               console.log(userName + ' ' + userName1 + ' ' + userName2 +' '+userName3);
         }
 
     </script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Email</label><br>
+    <input type="text" name="" id="email"><br>
+
+    <small id="message"></small><br>
+
+    <input type="button" value="Chake" onclick="chake1()"><br>
+
+   
+
+    <script>
+        function chake1() {
+            let email = document.getElementById('email').value;
+            let pattern =/^\S+\.\S+$/;        
+        if (pattern.test(email)) {
+            document.getElementById("message").innerHTML = "<small style='color:green;'>Email Is Valid</small><br>";
+        }
+        else {
+            document.getElementById("message").innerHTML = "<small style='color:red;'>Email is invalid </small><br>";
+        }
+    }
+    </script>
+    <script src="external.js"></script>
+</body>
+
+</html>
