@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emai Validation</title>
+</head>
+
+<body>
+
+    <script>
+        let email = prompt('Chack Your Email Validation');
+
+        let pattern = /^\S+\.\S+$/;
+
+        if (pattern.test(email)) {
+
+            document.write("Your Email is Valid");
+        }
+        else {
+            document.write("Your Email is Invalid");
+        }
+       
+    </script>
+
+</body>
+
+</html>
