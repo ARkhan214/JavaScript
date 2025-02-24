@@ -1,6 +1,7 @@
 
 
 
+<<<<<<< Updated upstream
 let uname=document.getElementById('name').value;
 let email=document.getElementById('email').value;
 let passw=document.getElementById('passw').value;
@@ -14,3 +15,18 @@ let hobby=document.getElementById ().value;
 let uname=document.getElementById('name').value;
 let uname=document.getElementById('name').value;
 let uname=document.getElementById('name').value;
+=======
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+
+
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+let uname=document.getElementById('name');
+>>>>>>> Stashed changes
