@@ -18,43 +18,45 @@
     </head>
 
     <body>
-        <form action="" id="myform">
-            <label for="">Name</label><br>
-            <input type="text" name="" id="name"><br>
+        <h1 style="text-align: center;">Trainee's Data Form</h1>
+        <div style="margin-left: 50px;">
+            <form action="" id="myform">
+                <label for=""><b>Name</b></label><br>
+                <input type="text" name="" id="name"><br>
 
-            <label for="">Email</label><br>
-            <input type="mail" name="" id="email"><br>
+                <label for=""><b>Contact</b></label><br>
+                <input type="number" id="contact"><br>
 
-            <label for="">Password</label><br>
-            <input type="password" id="passw"><br>
 
-            <label for="">Remarks</label>
-            <textarea name="" id="remarks" cols="7" rows="4"></textarea> <br>
+                <label for=""><b>Remarks</b></label><br>
+                <textarea name="" id="remarks"></textarea> <br>
 
-            <label for="">Gender</label><br>
-            <input type="radio" name="gender" value="Male">Male
-            <input type="radio" name="gender" value="Female">Female <br>
 
-            <label for="">Date of Birth</label><br>
-            <input type="date" name="" id="dob"><br>
-            <p></p>
-            <label for="">Hobby</label><br>
-            <input type="checkbox" name="hobby" value="Codeing">Codeing <br>
-            <input type="checkbox" name="hobby" value="Plaing">Plaing <br>
-            <input type="checkbox" name="hobby" value="Swiming">Swiming <br>
-            <input type="checkbox" name="hobby" value="Business">Business <br>
+                <label for=""><b>Gender</b></label><br>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female <br>
 
-            <label for="">Location</label>
-            <select name="" id="location">
-                <option value="Dhaka">Dhaka</option>
-                <option value="Barisal">Barisal</option>
-                <option value="Khulna">Khulna</option>
-            </select>
+                <label for=""><b>Date of Birth</b></label><br>
+                <input type="date" name="" id="dob"><br>
+                <p></p>
+                <label for=""><b>Courses</b></label><br>
+                <input type="checkbox" name="courses" value="NT">NT <br>
+                <input type="checkbox" name="courses" value="IAD">IAD <br>
+                <input type="checkbox" name="courses" value="DDD">DDD <br>
+                <input type="checkbox" name="courses" value="ESAD">ESAD <br>
 
-            <input type="button" value="Submit" onclick="she()">
-            <input type="reset" value="Reset">
-        </form>
-        <script src="form.js"></script>
+                <label for=""><b>Location</b></label><br>
+                <select name="" id="location">
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Barisal">Barisal</option>
+                    <option value="Khulna">Khulna</option>
+                </select><br><br>
+
+                <input type="button" value="Submit" onclick="she()">
+                <input type="reset" value="Reset">
+            </form>
+            <script src="form.js"></script>
+        </div>
     </body>
 
     </html>
